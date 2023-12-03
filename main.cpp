@@ -1,5 +1,6 @@
 #include "1.1.h"
 #include "1.2.h"
+#include "2.1.h"
 
 #include <string_view>
 
@@ -19,6 +20,10 @@ int main(int argc, char ** argv)
 	if (task == "1.2")
 	{
 		return task_1_2(input);
+	}
+	if (task == "2.1")
+	{
+		return task_2_1(input);
 	}
 	return 1;
 }
