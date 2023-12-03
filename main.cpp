@@ -27,5 +27,9 @@ int main(int argc, char ** argv)
 	{
 		return task_2_2(input);
 	}
+	if (task == "3.1")
+	{
+		return task_3_1(input);
+	}
 	return 1;
 }
