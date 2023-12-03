@@ -1,5 +1,10 @@
+#include "h.h"
+
 #include <fstream>
 #include <iostream>
+
+namespace
+{
 
 constexpr std::string_view digits[] = {
 	"one",
@@ -61,6 +66,8 @@ int extract_number_v2(std::string_view str)
 	}
 	return first * 10 + second;
 }
+
+} // namespace
 
 int task_1_2(std::string_view input_file)
 {
