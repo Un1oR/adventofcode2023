@@ -1,6 +1,7 @@
 #include "h.h"
 
 #include <string_view>
+#include <unordered_map>
 
 int main(int argc, char ** argv)
 {
@@ -11,29 +12,23 @@ int main(int argc, char ** argv)
 
 	std::string_view task(argv[1]);
 	std::string_view input(argv[2]);
-	if (task == "1.1")
+
+	using namespace std::string_view_literals;
+	std::unordered_map<std::string_view, int (*)(std::string_view)> tasks{
+		{"1.1", &task_1_1},
+		{"1.2", &task_1_2},
+		{"2.1", &task_2_1},
+		{"2.2", &task_2_2},
+		{"3.1", &task_3_1},
+		{"3.2", &task_3_2},
+		{"4.1", &task_4_1},
+	};
+	if (auto it = tasks.find(task); it == tasks.end())
 	{
-		return task_1_1(input);
+		return 1;
 	}
-	if (task == "1.2")
+	else
 	{
-		return task_1_2(input);
+		return it->second(input);
 	}
-	if (task == "2.1")
-	{
-		return task_2_1(input);
-	}
-	if (task == "2.2")
-	{
-		return task_2_2(input);
-	}
-	if (task == "3.1")
-	{
-		return task_3_1(input);
-	}
-	if (task == "3.2")
-	{
-		return task_3_2(input);
-	}
-	return 1;
 }
