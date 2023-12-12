@@ -16,3 +16,4 @@ int task_6_1(std::string_view input_file);
 int task_6_2(std::string_view input_file);
 int task_7_1(std::string_view input_file);
 int task_7_2(std::string_view input_file);
+int task_8_1(std::string_view input_file);
