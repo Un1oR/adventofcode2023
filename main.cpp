@@ -32,6 +32,7 @@ int main(int argc, char ** argv)
 		{"8.1", &task_8_1},
 		{"8.2", &task_8_2},
 		{"9.1", &task_9_1},
+		{"9.2", &task_9_2},
 	};
 	if (auto it = tasks.find(task); it == tasks.end())
 	{
