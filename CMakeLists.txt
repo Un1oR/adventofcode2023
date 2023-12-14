@@ -19,6 +19,7 @@ add_executable(aoc
     7.1.cpp
     7.2.cpp
     8.1.cpp
+    8.2.cpp
     h.h
     main.cpp)
 target_compile_options(aoc
