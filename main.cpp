@@ -34,6 +34,7 @@ int main(int argc, char ** argv)
 		{"9.1", &task_9_1},
 		{"9.2", &task_9_2},
 		{"10.1", &task_10_1},
+		{"10.2", &task_10_2},
 	};
 	if (auto it = tasks.find(task); it == tasks.end())
 	{
