@@ -28,3 +28,4 @@ int task_12_1(std::string_view input_file);
 int task_12_2(std::string_view input_file);
 int task_13_1(std::string_view input_file);
 int task_13_2(std::string_view input_file);
+int task_14_1(std::string_view input_file);
